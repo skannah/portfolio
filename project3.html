@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Financial Modeling Toolkit</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 
 <body class="dark">
@@ -12,7 +13,9 @@
     <header class="navbar">
       <div class="nav-inner">
         <div class="nav-left">
-          <div class="nav-logo">S</div>
+          <div class="nav-logo">
+            <img src="assets/logo.svg" alt="Surender logo" />
+          </div>
           <div>
             <div class="nav-title">Surender</div>
             <div class="nav-tagline">Full‑Stack • AI • Computer Vision</div>
@@ -22,6 +25,7 @@
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="index.html#projects">Projects</a>
+          <a href="blog.html">Blog</a>
           <button class="toggle-btn" onclick="toggleTheme()">
             <span class="toggle-dot"></span>
             <span>Dark / Light</span>
@@ -29,6 +33,22 @@
         </div>
       </div>
     </header>
+
+    <aside class="sidebar">
+      <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+      <div class="sidebar-inner">
+        <div class="sidebar-group">
+          <div class="sidebar-label">Page</div>
+          <a class="sidebar-link" href="#overview" title="Overview">O</a>
+          <a class="sidebar-link" href="#stack" title="Tech Stack">T</a>
+          <a class="sidebar-link" href="#features" title="Features">F</a>
+        </div>
+        <div class="sidebar-group" style="margin-top:10px;">
+          <div class="sidebar-label">Home</div>
+          <a class="sidebar-link" href="index.html" title="Back">←</a>
+        </div>
+      </div>
+    </aside>
 
     <main>
       <section class="hero">
@@ -47,30 +67,30 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="overview">
         <div class="section-title">Overview</div>
         <p class="card-body">
-          A suite of tools for WACC, NPV, IRR, terminal value, and scenario modeling — built for infrastructure and data‑center investment analysis.
+          A suite of tools for WACC, NPV, IRR, terminal value, and scenario modeling — tailored to infrastructure and data‑center investing, with an emphasis on clarity and repeatable analysis.
         </p>
       </section>
 
-      <section class="section">
+      <section class="section" id="stack">
         <div class="section-title">Tech Stack</div>
         <ul>
           <li>Python + Pandas</li>
           <li>NumPy for financial math</li>
-          <li>Streamlit (optional UI)</li>
-          <li>Excel/CSV import support</li>
+          <li>Optional Streamlit UI for interactive dashboards</li>
+          <li>Excel/CSV import and export support</li>
         </ul>
       </section>
 
-      <section class="section">
+      <section class="section" id="features">
         <div class="section-title">Key Features</div>
         <ul>
           <li>Discounted cash flow modeling</li>
-          <li>Scenario & sensitivity analysis</li>
+          <li>Scenario & sensitivity analysis (e.g., capex, power cost, utilization)</li>
           <li>Automated charts and visualizations</li>
-          <li>Terminal value and IRR calculators</li>
+          <li>Terminal value and IRR calculators, equity multiple, payback analysis</li>
         </ul>
       </section>
 
@@ -82,6 +102,7 @@
     <footer>© 2025 Surender — Financial Modeling Toolkit.</footer>
   </div>
 
+  <script src="sidebar.js"></script>
   <script>
     function toggleTheme() {
       document.body.classList.toggle("dark");
