@@ -7,41 +7,85 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <header>
-    <h1>Drone-Based Damage Detection</h1>
-    <p>Computer Vision Pipeline for Aerial Imagery</p>
-  </header>
+<body class="dark">
+  <div class="app-shell">
+    <header class="navbar">
+      <div class="nav-inner">
+        <div class="nav-left">
+          <div class="nav-logo">S</div>
+          <div>
+            <div class="nav-title">Surender</div>
+            <div class="nav-tagline">Full‑Stack • AI • Computer Vision</div>
+          </div>
+        </div>
 
-  <section>
-    <h2>Overview</h2>
-    <p>
-      This project uses drone imagery and computer vision to detect roof damage,
-      hail impact, missing shingles, and structural anomalies. The system
-      processes high-resolution aerial images and runs them through a trained
-      model to classify and localize damage.
-    </p>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <button class="toggle-btn" onclick="toggleTheme()">
+            <span class="toggle-dot"></span>
+            <span>Dark / Light</span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-    <h2>Tech Stack</h2>
-    <ul>
-      <li>Python + OpenCV</li>
-      <li>Roboflow Model Training</li>
-      <li>YOLOv8 / Faster R-CNN</li>
-      <li>Drone Imagery Pipeline</li>
-    </ul>
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <div class="hero-title">Drone‑Based Damage Detection</div>
+          <div class="hero-subtitle">
+            A computer‑vision pipeline that processes drone imagery to detect roof and structural damage.
+          </div>
 
-    <h2>Features</h2>
-    <ul>
-      <li>Automatic damage classification</li>
-      <li>Bounding box overlays</li>
-      <li>Batch processing for large drone datasets</li>
-      <li>Exportable reports for contractors and insurers</li>
-    </ul>
+          <div class="hero-tags">
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Roboflow</span>
+            <span class="tag">Drone Imagery</span>
+          </div>
+        </div>
+      </section>
 
-    <h2>Gallery</h2>
-    <p>Add drone images and detection results here.</p>
+      <section class="section">
+        <div class="section-title">Overview</div>
+        <p class="card-body">
+          This system analyzes high‑resolution drone images and identifies hail damage, missing shingles, cracks, and structural anomalies.
+        </p>
+      </section>
 
-    <a href="index.html">← Back to Portfolio</a>
-  </section>
+      <section class="section">
+        <div class="section-title">Tech Stack</div>
+        <ul>
+          <li>Python + OpenCV</li>
+          <li>Roboflow Model Training</li>
+          <li>YOLOv8 / Faster R‑CNN</li>
+          <li>Drone Imagery Pipeline</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Key Features</div>
+        <ul>
+          <li>Automatic damage classification</li>
+          <li>Bounding‑box overlays</li>
+          <li>Batch processing for large datasets</li>
+          <li>Exportable reports</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <a href="index.html" class="card-links">← Back to portfolio</a>
+      </section>
+    </main>
+
+    <footer>© 2025 Surender — Drone Damage Detection.</footer>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
 </body>
 </html>
