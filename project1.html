@@ -3,43 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Roofing Inspection Dashboard</title>
+  <title>AI Roofing Inspection Dashboard — Case Study</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <h1>AI Roofing Inspection Dashboard</h1>
-    <p>Full breakdown of the project</p>
-  </header>
+  <div class="app-shell">
+    <header class="navbar">
+      <div class="nav-inner">
+        <div class="nav-left">
+          <div class="nav-logo">S</div>
+          <div>
+            <div class="nav-title">Surender</div>
+            <div class="nav-tagline">Full‑Stack • AI • Computer Vision</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <button class="toggle-btn" onclick="toggleTheme()">
+            <span class="toggle-dot"></span>
+            <span>Dark / Light</span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-  <section>
-    <h2>Overview</h2>
-    <p>
-      This project analyzes roof images using a Roboflow-trained model,
-      overlays bounding boxes, and displays KPIs in a polished dashboard.
-    </p>
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <div class="hero-title">AI Roofing Inspection Dashboard</div>
+          <div class="hero-subtitle">
+            A production‑style SaaS dashboard that turns raw roof images into
+            actionable inspection reports with computer‑vision overlays.
+          </div>
+          <div class="hero-tags">
+            <span class="tag">React + Vite</span>
+            <span class="tag">Node + Express</span>
+            <span class="tag">Roboflow</span>
+            <span class="tag">Ant Design</span>
+          </div>
+        </div>
+      </section>
 
-    <h2>Tech Stack</h2>
-    <ul>
-      <li>React + Vite</li>
-      <li>Node.js + Express</li>
-      <li>Roboflow Computer Vision Model</li>
-      <li>Ant Design UI</li>
-    </ul>
+      <section class="section">
+        <div class="section-header">
+          <div class="section-title">Overview</div>
+        </div>
+        <p class="card-body">
+          This app is designed for roofing contractors and insurers who need
+          fast, consistent assessments of hail and wind damage. Users upload
+          drone or smartphone images, then the system runs a trained model and
+          displays detections directly on the image along with key KPIs.
+        </p>
+      </section>
 
-    <h2>Features</h2>
-    <ul>
-      <li>Image upload + preview</li>
-      <li>Bounding box overlay</li>
-      <li>Damage classification</li>
-      <li>Dashboard KPIs</li>
-    </ul>
+      <section class="section">
+        <div class="section-header">
+          <div class="section-title">Tech Stack</div>
+        </div>
+        <ul>
+          <li>Frontend: React, Vite, Ant Design</li>
+          <li>Backend: Node.js, Express</li>
+          <li>AI: Roboflow‑hosted detection model</li>
+          <li>Infrastructure: GitHub Pages / simple API backend</li>
+        </ul>
+      </section>
 
-    <h2>Gallery</h2>
-    <p>Add screenshots here</p>
+      <section class="section">
+        <div class="section-header">
+          <div class="section-title">Key Features</div>
+        </div>
+        <ul>
+          <li>Image upload with progress feedback</li>
+          <li>Bounding‑box overlay on predicted damage areas</li>
+          <li>Per‑image and per‑job KPIs (damage counts, severity)</li>
+          <li>Layout ready for multi‑user SaaS plans</li>
+        </ul>
+      </section>
 
-    <a href="index.html">← Back to Portfolio</a>
-  </section>
+      <section class="section">
+        <div class="section-header">
+          <div class="section-title">Gallery</div>
+          <div class="section-subtitle">Screenshots or demos can go here.</div>
+        </div>
+        <p class="card-body">
+          Add before/after images, example detections, or GIFs here to show the
+          workflow end‑to‑end.
+        </p>
+      </section>
+
+      <section class="section">
+        <a href="index.html" class="card-links">← Back to portfolio</a>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Surender — AI Roofing Inspection Dashboard.
+    </footer>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
 </body>
 </html>
