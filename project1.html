@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Roofing Inspection Dashboard — Case Study</title>
+  <title>AI Roofing Inspection Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="dark">
   <div class="app-shell">
     <header class="navbar">
       <div class="nav-inner">
@@ -18,10 +18,10 @@
             <div class="nav-tagline">Full‑Stack • AI • Computer Vision</div>
           </div>
         </div>
+
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="index.html#projects">Projects</a>
-          <a href="index.html#contact">Contact</a>
           <button class="toggle-btn" onclick="toggleTheme()">
             <span class="toggle-dot"></span>
             <span>Dark / Light</span>
@@ -35,9 +35,9 @@
         <div class="hero-card">
           <div class="hero-title">AI Roofing Inspection Dashboard</div>
           <div class="hero-subtitle">
-            A production‑style SaaS dashboard that turns raw roof images into
-            actionable inspection reports with computer‑vision overlays.
+            A production‑style SaaS dashboard that turns raw roof images into actionable inspection reports.
           </div>
+
           <div class="hero-tags">
             <span class="tag">React + Vite</span>
             <span class="tag">Node + Express</span>
@@ -48,50 +48,30 @@
       </section>
 
       <section class="section">
-        <div class="section-header">
-          <div class="section-title">Overview</div>
-        </div>
+        <div class="section-title">Overview</div>
         <p class="card-body">
-          This app is designed for roofing contractors and insurers who need
-          fast, consistent assessments of hail and wind damage. Users upload
-          drone or smartphone images, then the system runs a trained model and
-          displays detections directly on the image along with key KPIs.
+          This dashboard allows contractors and insurers to upload roof images, run them through a trained CV model, and view bounding‑box overlays and KPIs.
         </p>
       </section>
 
       <section class="section">
-        <div class="section-header">
-          <div class="section-title">Tech Stack</div>
-        </div>
+        <div class="section-title">Tech Stack</div>
         <ul>
-          <li>Frontend: React, Vite, Ant Design</li>
-          <li>Backend: Node.js, Express</li>
-          <li>AI: Roboflow‑hosted detection model</li>
-          <li>Infrastructure: GitHub Pages / simple API backend</li>
+          <li>React + Vite</li>
+          <li>Node.js + Express</li>
+          <li>Roboflow Detection Model</li>
+          <li>Ant Design UI</li>
         </ul>
       </section>
 
       <section class="section">
-        <div class="section-header">
-          <div class="section-title">Key Features</div>
-        </div>
+        <div class="section-title">Key Features</div>
         <ul>
-          <li>Image upload with progress feedback</li>
-          <li>Bounding‑box overlay on predicted damage areas</li>
-          <li>Per‑image and per‑job KPIs (damage counts, severity)</li>
-          <li>Layout ready for multi‑user SaaS plans</li>
+          <li>Image upload + preview</li>
+          <li>Bounding‑box overlay</li>
+          <li>Damage classification</li>
+          <li>Dashboard KPIs</li>
         </ul>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <div class="section-title">Gallery</div>
-          <div class="section-subtitle">Screenshots or demos can go here.</div>
-        </div>
-        <p class="card-body">
-          Add before/after images, example detections, or GIFs here to show the
-          workflow end‑to‑end.
-        </p>
       </section>
 
       <section class="section">
@@ -99,9 +79,7 @@
       </section>
     </main>
 
-    <footer>
-      © 2025 Surender — AI Roofing Inspection Dashboard.
-    </footer>
+    <footer>© 2025 Surender — AI Roofing Inspection Dashboard.</footer>
   </div>
 
   <script>
