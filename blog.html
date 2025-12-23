@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Surender</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+
+<body class="dark">
+  <div class="app-shell">
+    <header class="navbar">
+      <div class="nav-inner">
+        <div class="nav-left">
+          <div class="nav-logo">
+            <img src="assets/logo.svg" alt="Surender logo" />
+          </div>
+          <div>
+            <div class="nav-title">Surender</div>
+            <div class="nav-tagline">Full‑Stack • AI • Computer Vision</div>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contact">Contact</a>
+          <button class="toggle-btn" onclick="toggleTheme()">
+            <span class="toggle-dot"></span>
+            <span>Dark / Light</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+      <div class="sidebar-inner">
+        <div class="sidebar-group">
+          <div class="sidebar-label">Blog</div>
+          <a class="sidebar-link" href="#posts" title="Posts">P</a>
+        </div>
+        <div class="sidebar-group" style="margin-top:10px;">
+          <div class="sidebar-label">Home</div>
+          <a class="sidebar-link" href="index.html" title="Back">←</a>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <div class="hero-title">Writing about systems, AI, and leverage.</div>
+          <div class="hero-subtitle">
+            Short, focused posts on building AI‑powered products, debugging complexity, and thinking about infrastructure and compounding.
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="posts">
+        <div class="section-header">
+          <div class="section-title">Posts</div>
+          <div class="section-subtitle">Add individual blog posts as separate pages, or link to external platforms.</div>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Example: From Drone Images to Decisions</div>
+              <span class="card-pill">AI / CV</span>
+            </div>
+            <div class="card-body">
+              How to turn raw drone imagery into structured outputs that contractors and insurers actually use.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Example: Modeling Data Center Investments</div>
+              <span class="card-pill">Finance</span>
+            </div>
+            <div class="card-body">
+              Thinking about WACC, IRR, and terminal value when the asset is compute instead of concrete.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2025 Surender — Blog.</footer>
+  </div>
+
+  <script src="sidebar.js"></script>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
 
