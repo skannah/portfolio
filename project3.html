@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Financial Modeling Toolkit</title>
+  <title>SpaceX Launch Data Science Project</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
@@ -41,7 +41,8 @@
           <div class="sidebar-label">Page</div>
           <a class="sidebar-link" href="#overview" title="Overview">O</a>
           <a class="sidebar-link" href="#stack" title="Tech Stack">T</a>
-          <a class="sidebar-link" href="#features" title="Features">F</a>
+          <a class="sidebar-link" href="#analysis" title="Analysis">A</a>
+          <a class="sidebar-link" href="#insights" title="Insights">I</a>
         </div>
         <div class="sidebar-group" style="margin-top:10px;">
           <div class="sidebar-label">Home</div>
@@ -53,16 +54,16 @@
     <main>
       <section class="hero">
         <div class="hero-card">
-          <div class="hero-title">Financial Modeling Toolkit</div>
+          <div class="hero-title">SpaceX Launch Data Science Project</div>
           <div class="hero-subtitle">
-            Tools for evaluating data‑center and infrastructure investments using modern financial metrics.
+            A full data science workflow analyzing SpaceX Falcon 9 launch data to predict booster landing success, optimize mission reliability, and visualize historical launch performance.
           </div>
 
           <div class="hero-tags">
             <span class="tag">Python</span>
             <span class="tag">Pandas</span>
-            <span class="tag">NumPy</span>
-            <span class="tag">DCF Modeling</span>
+            <span class="tag">Scikit‑Learn</span>
+            <span class="tag">Plotly Dash</span>
           </div>
         </div>
       </section>
@@ -70,28 +71,43 @@
       <section class="section" id="overview">
         <div class="section-title">Overview</div>
         <p class="card-body">
-          A suite of tools for WACC, NPV, IRR, terminal value, and scenario modeling — tailored to infrastructure and data‑center investing, with an emphasis on clarity and repeatable analysis.
+          This project explores SpaceX Falcon 9 launch data to understand the factors that influence booster landing success. Using historical launch records, mission metadata, landing outcomes, and payload characteristics, the goal was to build a predictive model and interactive dashboard that helps visualize mission reliability and identify patterns in successful landings.
         </p>
       </section>
 
       <section class="section" id="stack">
         <div class="section-title">Tech Stack</div>
         <ul>
-          <li>Python + Pandas</li>
-          <li>NumPy for financial math</li>
-          <li>Optional Streamlit UI for interactive dashboards</li>
-          <li>Excel/CSV import and export support</li>
+          <li>Python for data cleaning, feature engineering, and modeling</li>
+          <li>Pandas for dataset manipulation and preprocessing</li>
+          <li>Scikit‑Learn for classification models (Logistic Regression, Random Forest, SVM)</li>
+          <li>Plotly Dash for interactive visualizations and mission dashboards</li>
+          <li>Jupyter Notebooks for exploratory data analysis</li>
         </ul>
       </section>
 
-      <section class="section" id="features">
-        <div class="section-title">Key Features</div>
+      <section class="section" id="analysis">
+        <div class="section-title">Data Science Workflow</div>
         <ul>
-          <li>Discounted cash flow modeling</li>
-          <li>Scenario & sensitivity analysis (e.g., capex, power cost, utilization)</li>
-          <li>Automated charts and visualizations</li>
-          <li>Terminal value and IRR calculators, equity multiple, payback analysis</li>
+          <li>Collected and cleaned SpaceX launch data from public APIs and CSV archives</li>
+          <li>Performed exploratory data analysis to identify correlations between payload mass, orbit type, launch site, and landing success</li>
+          <li>Engineered features such as mission year, booster version, and landing type</li>
+          <li>Trained multiple ML models to predict landing success probability</li>
+          <li>Evaluated models using accuracy, precision, recall, and ROC‑AUC</li>
         </ul>
+      </section>
+
+      <section class="section" id="insights">
+        <div class="section-title">Key Insights</div>
+        <ul>
+          <li>Payload mass and orbit type strongly influence landing success probability</li>
+          <li>Newer booster versions show significantly higher recovery rates</li>
+          <li>Certain launch sites correlate with higher landing reliability</li>
+          <li>Random Forest and Gradient Boosting models performed best in prediction tasks</li>
+        </ul>
+        <p class="card-body">
+          The final dashboard allows users to explore mission outcomes, filter by orbit or payload mass, and view predicted landing probabilities for future missions.
+        </p>
       </section>
 
       <section class="section">
@@ -99,7 +115,7 @@
       </section>
     </main>
 
-    <footer>© 2025 Surender — Financial Modeling Toolkit.</footer>
+    <footer>© 2025 Surender — SpaceX Launch Data Science Project.</footer>
   </div>
 
   <script src="sidebar.js"></script>
