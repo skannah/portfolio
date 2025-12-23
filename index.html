@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Surender — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 
 <body class="dark">
@@ -13,7 +14,9 @@
     <header class="navbar">
       <div class="nav-inner">
         <div class="nav-left">
-          <div class="nav-logo">S</div>
+          <div class="nav-logo">
+            <img src="assets/logo.svg" alt="Surender logo" />
+          </div>
           <div>
             <div class="nav-title">Surender</div>
             <div class="nav-tagline">Full‑Stack • AI • Computer Vision</div>
@@ -23,6 +26,7 @@
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="#projects">Projects</a>
+          <a href="blog.html">Blog</a>
           <a href="#contact">Contact</a>
 
           <button class="toggle-btn" onclick="toggleTheme()">
@@ -33,7 +37,40 @@
       </div>
     </header>
 
-    <!-- HERO -->
+    <!-- FLOATING SIDEBAR -->
+    <aside class="sidebar">
+      <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+      <div class="sidebar-inner">
+        <div class="sidebar-group">
+          <div class="sidebar-label">Nav</div>
+          <a class="sidebar-link" href="#about" title="About">A</a>
+          <a class="sidebar-link" href="#projects" title="Projects">P</a>
+          <a class="sidebar-link" href="#contact" title="Contact">C</a>
+          <a class="sidebar-link" href="blog.html" title="Blog">B</a>
+        </div>
+        <div class="sidebar-group" style="margin-top:10px;">
+          <div class="sidebar-label">Social</div>
+          <a
+            class="sidebar-link"
+            href="https://github.com/skannah"
+            target="_blank"
+            title="GitHub"
+          >
+            G
+          </a>
+          <a
+            class="sidebar-link"
+            href="https://www.linkedin.com/in/surenderkannah/"
+            target="_blank"
+            title="LinkedIn"
+          >
+            in
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CONTENT -->
     <main>
       <section class="hero" id="about">
         <div class="hero-card">
@@ -48,10 +85,14 @@
             <span class="tag">Computer Vision</span>
             <span class="tag">AI Dashboards</span>
           </div>
+
+          <a class="resume-btn" href="assets/resume.pdf" target="_blank">
+            <span class="icon">↓</span>
+            <span>Download Resume</span>
+          </a>
         </div>
       </section>
 
-      <!-- PROJECTS -->
       <section class="section" id="projects">
         <div class="section-header">
           <div class="section-title">Featured Projects</div>
@@ -100,7 +141,6 @@
         </div>
       </section>
 
-      <!-- CONTACT -->
       <section class="section" id="contact">
         <div class="section-header">
           <div class="section-title">Contact</div>
@@ -111,14 +151,14 @@
           <li>Email: youremail@example.com</li>
           <li>
             GitHub:
-            <a href="https://github.com/yourusername" target="_blank">
-              https://github.com/yourusername
+            <a href="https://github.com/skannah" target="_blank">
+              https://github.com/skannah
             </a>
           </li>
           <li>
             LinkedIn:
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
-              https://linkedin.com/in/yourprofile
+            <a href="https://www.linkedin.com/in/surenderkannah/" target="_blank">
+              https://www.linkedin.com/in/surenderkannah/
             </a>
           </li>
         </ul>
@@ -130,6 +170,7 @@
     </footer>
   </div>
 
+  <script src="sidebar.js"></script>
   <script>
     function toggleTheme() {
       document.body.classList.toggle("dark");
