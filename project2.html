@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drone-Based Damage Detection</title>
+  <title>AI Medical Imaging Assistant</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
@@ -42,6 +42,7 @@
           <a class="sidebar-link" href="#overview" title="Overview">O</a>
           <a class="sidebar-link" href="#stack" title="Tech Stack">T</a>
           <a class="sidebar-link" href="#features" title="Features">F</a>
+          <a class="sidebar-link" href="#workflow" title="Workflow">W</a>
         </div>
         <div class="sidebar-group" style="margin-top:10px;">
           <div class="sidebar-label">Home</div>
@@ -53,16 +54,17 @@
     <main>
       <section class="hero">
         <div class="hero-card">
-          <div class="hero-title">Drone‑Based Damage Detection</div>
+          <div class="hero-title">AI Medical Imaging Assistant</div>
           <div class="hero-subtitle">
-            A computer‑vision pipeline that processes drone imagery to detect roof and structural damage.
+            An AI‑powered assistant that analyzes medical images (X‑rays, CT, MRI) to highlight suspicious regions,
+            surface structured findings, and support clinician workflows.
           </div>
 
           <div class="hero-tags">
-            <span class="tag">Python</span>
-            <span class="tag">OpenCV</span>
-            <span class="tag">Roboflow</span>
-            <span class="tag">Drone Imagery</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Medical Imaging</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Clinical Workflow</span>
           </div>
         </div>
       </section>
@@ -70,28 +72,46 @@
       <section class="section" id="overview">
         <div class="section-title">Overview</div>
         <p class="card-body">
-          This system analyzes high‑resolution drone images and identifies hail damage, missing shingles, cracks, and structural anomalies, producing structured outputs usable by contractors and insurers.
+          This project prototypes an AI assistant that ingests medical images and produces
+          visual overlays plus structured findings that can be reviewed by clinicians.
+          The goal is not to replace medical judgment, but to act as a second set of
+          eyes: flagging suspicious regions, estimating likelihoods, and organizing
+          information in a way that fits existing radiology workflows.
         </p>
       </section>
 
       <section class="section" id="stack">
         <div class="section-title">Tech Stack</div>
         <ul>
-          <li>Python + OpenCV</li>
-          <li>Roboflow model training</li>
-          <li>YOLOv8 / Faster R‑CNN (object detection)</li>
-          <li>Drone imagery preprocessing pipeline</li>
+          <li>Python + PyTorch for model training and inference</li>
+          <li>Medical imaging formats: DICOM, PNG exports</li>
+          <li>Model architectures: CNN / Vision Transformer for classification + segmentation</li>
+          <li>Frontend: simple web UI for image upload and result review</li>
         </ul>
       </section>
 
       <section class="section" id="features">
         <div class="section-title">Key Features</div>
         <ul>
-          <li>Automatic damage classification and localization</li>
-          <li>Bounding‑box overlays on original drone frames</li>
-          <li>Batch processing for large image sets</li>
-          <li>Exportable summaries and reports</li>
+          <li>Image upload for X‑rays, CT slices, or MRI frames</li>
+          <li>Heatmaps / bounding boxes highlighting regions of interest</li>
+          <li>Structured summary of possible findings (e.g., “possible nodule”, “opacity”, “asymmetry”)</li>
+          <li>Exportable reports that can be attached to clinical systems</li>
         </ul>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="section-title">Assistant Workflow</div>
+        <ul>
+          <li>1. Clinician uploads an anonymized image (or DICOM exported frame).</li>
+          <li>2. The model runs detection/segmentation and generates visual overlays.</li>
+          <li>3. The assistant produces a human‑readable summary of key findings.</li>
+          <li>4. Clinician reviews, accepts/rejects, and finalizes the report.</li>
+        </ul>
+        <p class="card-body">
+          This design emphasizes assistive use only — supporting experts with fast triage and additional signal,
+          not making autonomous diagnostic decisions.
+        </p>
       </section>
 
       <section class="section">
@@ -99,7 +119,7 @@
       </section>
     </main>
 
-    <footer>© 2025 Surender — Drone Damage Detection.</footer>
+    <footer>© 2025 Surender — AI Medical Imaging Assistant.</footer>
   </div>
 
   <script src="sidebar.js"></script>
